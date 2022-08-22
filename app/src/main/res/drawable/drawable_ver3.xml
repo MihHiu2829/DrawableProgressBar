@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    thinkness la độ dày khuyên-->
+<!--    innerRadius đường kính nhẫn-->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:useLevel="false"
+    android:thickness="4dp"
+    android:innerRadius="50dp"
+        android:shape="ring">
+        <corners android:radius="20dp" />
+
+        <size
+            android:width="100dp"
+
+            android:height="100dp" />
+        them vao ở ver 2, dùng type loại, có 3 kiểu linear , sweep , radial
+        - dùng thuộc tính radial hình cấu chúc trong gradient sẽ bo tròn ở tâm và tỏa
+        ra ở vòng ngoài =>> thuộc tính đi kèm của radial thường là
+        gradientRadius
+        - sweep, hình xoắn ốc trong gradient tạo 1 màu xoay xoắn ốc
+        <gradient
+            android:angle="45"
+            android:centerColor="@color/white"
+            android:endColor="@color/black"
+            android:gradientRadius="100dp"
+            android:startColor="@color/teal_700"
+            android:type="sweep" />
+    </shape>
